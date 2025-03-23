@@ -7,7 +7,7 @@ This repository contains the code and resources for the paper: "TBD". ABSA-LIT a
 - A baseline model (fine-tuned Llama 3.1 8B) that performs both ABSA and entity typing
 
 ## Repository Structure
-    ```shell
+```shell
 ├── data_generation/              # Scripts for dataset generation
 │   ├── wikidata_extraction.py    # Extracts book data from Wikidata
 │   └── generate_reviews.py       # Generates reviews using LLMs
@@ -31,5 +31,4 @@ This repository contains the code and resources for the paper: "TBD". ABSA-LIT a
 │   ├── format_converters.py      # Convert between different formats (e.g., gemma_to_phi_format.py)
 │   └── dataset_upload.py         # Scripts for uploading to Hugging Face
 ├── LICENSE                       # Apache 2.0 license
-└── README.md                     # This file
-```
+└── README.md                     # This file```
