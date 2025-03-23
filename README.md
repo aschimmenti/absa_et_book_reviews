@@ -1,9 +1,13 @@
 # Aspect-Based Sentiment Analysis for Literature Book Reviews
+
 This repository contains the code and resources for the paper: "TBD". ABSA-LIT addresses the limited availability of datasets for Aspect-Based Sentiment Analysis (ABSA) in the literary domain. We present:
+
 - A methodology for generating semi-synthetic ABSA datasets by combining structured knowledge (Wikidata, OpenLibrary) with human-written book reviews
 - A dataset of 10,000 book reviews with aspect-based sentiment annotations and DOLCE ontology entity typing
 - A baseline model (fine-tuned Llama 3.1 8B) that performs both ABSA and entity typing
 
+## Repository Structure
+    ```shell
 ├── data_generation/              # Scripts for dataset generation
 │   ├── wikidata_extraction.py    # Extracts book data from Wikidata
 │   └── generate_reviews.py       # Generates reviews using LLMs
@@ -28,3 +32,4 @@ This repository contains the code and resources for the paper: "TBD". ABSA-LIT a
 │   └── dataset_upload.py         # Scripts for uploading to Hugging Face
 ├── LICENSE                       # Apache 2.0 license
 └── README.md                     # This file
+```
