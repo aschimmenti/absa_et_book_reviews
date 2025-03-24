@@ -1,0 +1,24 @@
+{
+    "aspects": [
+        {
+            "aspect_span": "adventure fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "positive",
+            "input_aspect": "adventure fiction"
+        },
+        {
+            "aspect_span": "Fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "positive",
+            "input_aspect": "adventure fiction"
+        },
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "negative",
+            "input_aspect": "James Hilton"
+        }
+    ],
+    "review_text": "This book is a captivating adventure fiction that takes you on a thrilling journey through the mysterious mountains of Tibet. The plot is intriguing, filled with unexpected twists that keep you engaged. However, I found the writing style a bit lacking, which detracted from the overall experience. While the story itself is a solid piece of fiction, I felt that James Hilton's portrayal of the characters could have been more developed. Despite this, the exploration of Shangri-La and its secrets is fascinating and makes for an enjoyable read. Overall, it's a worthwhile adventure, but it could have benefited from deeper character exploration.",
+    "source_prompt_file": "prompt_4_OL2455093W.json"
+}

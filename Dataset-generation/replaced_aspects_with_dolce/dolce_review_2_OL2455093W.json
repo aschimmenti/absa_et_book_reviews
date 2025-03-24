@@ -1,0 +1,28 @@
+{
+    "review_text": "While I had high hopes for James Hilton's work, I found it lacking in depth. The adventure fiction genre is usually thrilling, but this story felt a bit flat. However, the visionary and metaphysical elements were intriguing, offering a glimpse into a world that could have been more fully realized. The setting in the snow-capped mountains of Tibet was captivating, but the characters didn't quite resonate with me. Overall, it had potential but didn't quite deliver.",
+    "aspects": [
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "negative",
+            "input_aspect": "James Hilton",
+            "DOLCEType": "Person"
+        },
+        {
+            "aspect_span": "adventure fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "positive",
+            "input_aspect": "adventure fiction",
+            "DOLCEType": "InformationEntity"
+        },
+        {
+            "aspect_span": "visionary & metaphysical",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "positive",
+            "input_aspect": "Fiction, visionary & metaphysical",
+            "DOLCEType": "InformationEntity"
+        }
+    ],
+    "source_prompt_file": "prompt_2_OL2455093W.json",
+    "source_review_file": "review_2_OL2455093W.json"
+}

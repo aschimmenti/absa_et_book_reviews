@@ -1,0 +1,24 @@
+{
+    "aspects": [
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "positive",
+            "input_aspect": "James Hilton"
+        },
+        {
+            "aspect_span": "visionary & metaphysical",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "positive",
+            "input_aspect": "Fiction, visionary & metaphysical"
+        },
+        {
+            "aspect_span": "lost world fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "neutral",
+            "input_aspect": "lost world fiction"
+        }
+    ],
+    "review_text": "James Hilton's storytelling is truly captivating. The way he weaves a visionary and metaphysical narrative around the hidden community of Shangri-La is nothing short of brilliant. The characters' journey through the uncharted mountains is both thrilling and thought-provoking. While the genre leans towards lost world fiction, it offers so much more in terms of depth and exploration of human nature. I found myself completely immersed in this enchanting tale, and it left me pondering long after I turned the last page.",
+    "source_prompt_file": "prompt_0_OL2455093W.json"
+}

@@ -1,0 +1,24 @@
+{
+    "aspects": [
+        {
+            "aspect_span": "adventure fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "negative",
+            "input_aspect": "adventure fiction"
+        },
+        {
+            "aspect_span": "Adventure stories",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "positive",
+            "input_aspect": "Adventure stories"
+        },
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "negative",
+            "input_aspect": "James Hilton"
+        }
+    ],
+    "review_text": "While I was drawn to the premise of a hidden community in the mountains, I found the adventure fiction genre a bit lacking in depth. The story had its moments, especially in exploring the allure of adventure stories, but it felt like it missed the mark overall. James Hilton's writing, though intriguing, didn't quite resonate with me as I had hoped. The characters seemed underdeveloped, which detracted from the experience. I wanted to love this book, but it ultimately left me wanting more.",
+    "source_prompt_file": "prompt_3_OL2455093W.json"
+}

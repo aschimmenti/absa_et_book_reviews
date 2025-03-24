@@ -1,0 +1,24 @@
+{
+    "aspects": [
+        {
+            "aspect_span": "lost world fiction",
+            "input_category": "CONTENT#GENRE",
+            "input_sentiment": "positive",
+            "input_aspect": "lost world fiction"
+        },
+        {
+            "aspect_span": "Fantasy fiction",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "positive",
+            "input_aspect": "Fantasy fiction"
+        },
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "neutral",
+            "input_aspect": "James Hilton"
+        }
+    ],
+    "review_text": "James Hilton's novel is a captivating journey into lost world fiction that truly transports you to another realm. The enchanting setting of Shangri-La is beautifully crafted, making it a standout in the fantasy fiction genre. The characters, each with their own unique backgrounds, add depth to the story, and the mystery surrounding their hidden paradise keeps you engaged throughout. Hilton's writing style is both elegant and immersive, making it hard to put the book down. Overall, this is a delightful read that showcases the magic of adventure and discovery.",
+    "source_prompt_file": "prompt_1_OL2455093W.json"
+}

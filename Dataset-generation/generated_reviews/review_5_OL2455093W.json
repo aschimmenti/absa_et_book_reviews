@@ -1,0 +1,24 @@
+{
+    "aspects": [
+        {
+            "aspect_span": "James Hilton",
+            "input_category": "BOOK#AUTHOR",
+            "input_sentiment": "positive",
+            "input_aspect": "James Hilton"
+        },
+        {
+            "aspect_span": "the plot felt a bit predictable",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "negative",
+            "input_aspect": "CONTENT#TOPIC"
+        },
+        {
+            "aspect_span": "adventure fiction",
+            "input_category": "CONTENT#TOPIC",
+            "input_sentiment": "negative",
+            "input_aspect": "Fiction"
+        }
+    ],
+    "review_text": "In 'Lost Horizon', James Hilton crafts a captivating tale that transports readers to the mystical Shangri-La. The adventure fiction genre shines through with its rich descriptions and intriguing characters. However, I found that the plot felt a bit predictable at times, lacking the twists I hoped for. Despite this, Hilton's ability to create a vivid world makes it a worthwhile read for anyone seeking an escape into a hidden paradise. Overall, it's a delightful journey that showcases Hilton's talent as a storyteller.",
+    "source_prompt_file": "prompt_5_OL2455093W.json"
+}

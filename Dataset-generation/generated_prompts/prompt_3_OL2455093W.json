@@ -1,0 +1,30 @@
+{
+  "book_id": "OL2455093W",
+  "review_id": "1492391719",
+  "aspects": [
+    {
+      "aspect": "adventure fiction",
+      "category": "CONTENT#GENRE",
+      "type": "fiction genre",
+      "sentiment": "negative",
+      "DOLCEType": "InformationEntity"
+    },
+    {
+      "aspect": "Adventure stories",
+      "category": "CONTENT#TOPIC",
+      "type": "subject",
+      "sentiment": "positive",
+      "DOLCEType": "InformationEntity"
+    },
+    {
+      "aspect": "James Hilton",
+      "category": "BOOK#AUTHOR",
+      "type": "human",
+      "sentiment": "negative",
+      "DOLCEType": "Person"
+    }
+  ],
+  "system_prompt": "You are an expert in creating synthetic book reviews dataset for Aspect based sentiment analysis (ABSA). Your task is to generate a new, realistic book review that incorporates the provided aspects of the book.\n\nFollow these guidelines:\n1. Use the provided book information (title, plot) to understand the context.\n2. Incorporate the specified aspects naturally into the review by using the input aspects and their categorization as a guardrail on how to refer it into the text. \n\nThis is mandatory, and you will be evaluated on this aspect. Treat the given review as a template: mantain its register (serious if serious, funny if funny). Remember to sound natural! \n3. Use the given review as inspiration to sound as authentic as a real reader.\n4. Use natural language and a conversational tone similar to the provided example review. Do not add aspects or categories that are not in the given set of aspects.  \n6. The review should be around 150 words in length, no longer than the given review to use. \n7. This will be used as a train dataset, so make sure to be absolutely precise in the way the annotation compares to the text. \n\n\n\n\n\nReturn the review in the given JSON schema, using the 'review' key for the spinned text, and the other keys as the annotation. ",
+  "user_prompt": "Book: \"\" by James Hilton\n\nPlot: {'type': '/type/text', 'value': 'Following a plane crash, Conway, a British consul; his deputy; a missionary; and an American financier find themselves in the enigmatic snow-capped mountains of uncharted Tibet. Here they discover a seemingly perfect hidden community where they are welcomed with gracious hospitality. Intrigued by its mystery, the travellers set about discovering the secret hidden at the shimmering heart of Shangri-La.'}\n\nPlease create a new, realistic book review that incorporates the following aspects:\n1. CONTENT#GENRE (adventure fiction); sentiment: negative\n2. CONTENT#TOPIC (Adventure stories); sentiment: positive\n3. BOOK#AUTHOR (James Hilton); sentiment: negative\n\nUse this review as a style reference (but DO NOT copy its content):\n\"9339\"\n\nGenerate a completely new review that mentions the aspects listed above while maintaining a natural, authentic tone.",
+  "example": "\nTHE FOLLOWING IS AN EXAMPLE. NEVER USE THE ASPECTS OR THE CONTENT OF THIS EXAMPLE IN YOUR OUTPUT.\nOriginal Review: \"I couldn't put this book down. Olga Tokarczuk's style is engaging and the plot kept me guessing. Some of the characters felt a bit flat though. The writing is ridicously well crafted.\"\n\nBook: \"The Silent Patient\" by Alex Michaelides\nAspects to incorporate:\n1. Aspect: \"Stream of consciousness\". Sentiment: positive. Category: CONTENT#STYLE\n2. Aspect: \"Romanticism\". Sentiment: positive. Category: CONTENT#MOVEMENT\n3. Aspect: \"Alicia Berenson\". Sentiment: positive. Category: CONTENT#CHARACTER\n4. Aspect: \"Democracy\". Sentiment: negative. Category: CONTENT#TOPIC\n5. Aspect: \"Mental illness\". Sentiment: positive. Category: CONTENT#TOPIC\n6. Aspect: \"Young adult\". Sentiment: neutral. Category: CONTENT#AUDIENCE\n\nGenerated JSON Schema: \n\n{\n    \"review_text\": \"I couldn't put this book down. The author's style is so similar to Joyce's stream of consciousness and the plot kept me guessing. The portrayal of mental illness and the character of Alicia Berenson are particularly compelling. The romantic elements blend beautifully with the darker themes. However, I found the book's take on democracy's issues rather simplistic and unconvincing. The genre is very young adult tbh. Overall, a masterful psychological thriller that will stay with you long after you finish reading.\",\n    \"aspects\": [\n        {\n            \"aspect_span\": \"Joyce's stream of consciousness\",\n            \"input_category\": \"CONTENT#STYLE\",\n            \"input_sentiment\": \"positive\",\n            \"input_aspect\": \"stream of consciousness\"\n        },\n        {\n            \"aspect_span\": \"romantic elements\",\n            \"input_category\": \"CONTENT#MOVEMENT\",\n            \"input_sentiment\": \"positive\",\n            \"input_aspect\": \"Romanticism\"\n        },\n        {\n            \"aspect_span\": \"Alicia Berenson\",\n            \"input_category\": \"CONTENT#CHARACTER\",\n            \"input_sentiment\": \"positive\",\n            \"input_aspect\": \"Alicia Berenson\"\n        },\n        {\n            \"aspect_span\": \"democracy\",\n            \"input_category\": \"CONTENT#TOPIC\",\n            \"input_sentiment\": \"negative\",\n            \"input_aspect\": \"democracy\"\n        },\n        {\n            \"aspect_span\": \"mental illness\",\n            \"input_category\": \"CONTENT#TOPIC\",\n            \"input_sentiment\": \"positive\",\n            \"input_aspect\": \"mental illness\"\n        },\n        {\n            \"aspect_span\": \"very young adult\",\n            \"input_category\": \"CONTENT#AUDIENCE\",\n            \"input_sentiment\": \"neutral\",\n            \"input_aspect\": \"young adult\"\n        }\n    ]\n}\n"
+}
