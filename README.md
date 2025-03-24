@@ -8,27 +8,20 @@ This repository contains the code and resources for the paper: "TBD". ABSA-LIT a
 
 ## Repository Structure
 ```shell
-├── data_generation/              # Scripts for dataset generation
-│   ├── wikidata_extraction.py    # Extracts book data from Wikidata
-│   └── generate_reviews.py       # Generates reviews using LLMs
-│
-├── data_processing/              # Scripts for data processing
+├── dataset_generation/              # Scripts for dataset generation
+│   ├── generated prompts /              # examples of generated prompts (0-5)
+│   ├── generated reviews /              # examples of generated reviews (0-5)
+│   └── replaced_aspects_with_dolce /              # final reviews (0-5)
+├── DOLCE-alignment/              # Scripts for data processing
 │   ├── text2amr2fred.py          # Wrapper for Text2AMR2FRED tool
 │   ├── dolce_alignment.py        # Aligns aspects with DOLCE ontology
 │   └── data_validation.py        # Validates dataset quality
 │
-├── model/                        # Model training and evaluation
-│   ├── train.py                  # Fine-tunes Llama 3.1 8B
-│   └── evaluate.py              # Runs inference on new reviews
+├── unsloth_llama3_1.ipynb/                        # Model training and evaluation
 │
-├── evaluation/                   # Evaluation scripts and results
-│   ├── metrics.py                # Implements evaluation metrics
-│   └── results/                  # Detailed evaluation results
+├── absa_ollama_inference.py/                   # Inference and evaluation (creates folder w/ json output)
 │
-├── examples/                     # Example usage and demonstrations
+├── metric_llama_answers.py/                     # computes metrics on output folder w jsons
 │
-├── utils/                        # Utility functions
-│   ├── format_converters.py      # Convert between different formats (e.g., gemma_to_phi_format.py)
-│   └── dataset_upload.py         # Scripts for uploading to Hugging Face
 ├── LICENSE                       # Apache 2.0 license
 └── README.md                     # This file```
